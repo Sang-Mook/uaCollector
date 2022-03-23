@@ -1,0 +1,67 @@
+{
+  "name": "starter",
+  "version": "0.1.0",
+  "author": "SangMook",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-app-rewired build && rimraf build/**/*.map && node server/server.js",
+    "dev": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "postbuild": "rimraf build/**/*.map",
+    "lint": "eslint src/**/*.ts*",
+    "lint:fix": "eslint --fix src/**/*.ts*"
+  },
+  "dependencies": {
+    "antd": "^4.10.3",
+    "compression": "^1.7.4",
+    "eslint": "^7.18.0",
+    "express": "^4.17.1",
+    "immer": "^8.0.1",
+    "morgan": "^1.10.0",
+    "react": "^17.0.1",
+    "react-app-polyfill": "^2.0.0",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.1",
+    "react-sizeme": "^2.6.12",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "typesafe-actions": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.22",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/redux-logger": "^3.0.8",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "axios": "^0.21.1",
+    "babel-plugin-import": "^1.13.3",
+    "customize-cra": "^1.0.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.22.0",
+    "husky": "^4.3.8",
+    "react-app-rewire-less": "^2.1.3",
+    "react-app-rewired": "^2.1.8",
+    "redux-logger": "^3.0.6",
+    "typescript": "^3.7.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

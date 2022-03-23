@@ -1,0 +1,5 @@
+export const mainCmds = {
+  MAIN_DATA_REQUESTED: 'MAIN_DATA_REQUESTED' as const,
+  MAIN_DATA_SUCCESS: 'MAIN_DATA_SUCCESS' as const,
+  MAIN_DATA_FAILED: 'MAIN_DATA_FAILED' as const
+}
